@@ -22,7 +22,6 @@ function! s:getColorSchemeName(colors)
     let m = time % total
     let total = 0
     for [key, value] in items(a:colors)
-        echo key . ': ' . value
         let total += value
         if m < total
             return key
